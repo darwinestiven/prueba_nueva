@@ -1,0 +1,25 @@
+GET http://localhost:8000/mascotas/buscar HTTP/1.1
+
+###
+POST http://localhost:8000/mascotas/crear HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "lucas",
+    "edad": 7
+}
+
+###
+GET http://localhost:8000/mascotas/buscar/8 HTTP/1.1
+
+###
+PUT http://localhost:8000/mascotas/actualizar/12 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Max",
+    "edad":10
+}
+
+###
+DELETE http://localhost:8000/mascotas/eliminar/5 HTTP/1.1
